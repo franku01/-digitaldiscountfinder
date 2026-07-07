@@ -1,36 +1,38 @@
 <style>
     .product-row {
         display: flex;
-        align-items: flex-start; /* Aligns image and text to the top */
-        gap: 20px;
-        margin-bottom: 40px;
+        align-items: flex-start; /* Aligns content to the top */
+        gap: 15px;              /* Spacing between icon and text */
+        margin-bottom: 30px;
     }
-    .product-img {
-        width: 150px;      /* Adjust size as needed */
-        height: auto;      /* Keeps the image aspect ratio */
-        flex-shrink: 0;    /* Prevents the image from squishing */
+    .product-icon {
+        width: 40px;            /* Forces the icon to be small */
+        height: 40px;           /* Forces the icon to be small */
+        object-fit: cover;      /* Keeps the image from stretching */
+        flex-shrink: 0;         /* Ensures it doesn't get squished */
     }
-    .product-text {
-        flex: 1;           /* Allows text to take remaining space */
+    .content-box {
+        display: flex;
+        flex-direction: column;
     }
 </style>
 
 <h2>My Office Setup Essentials</h2>
 
-<h3>Reliable Wireless Mouse</h3>
 <div class="product-row">
-    <img src="mouse.jpg" alt="Logitech Wireless Mouse" class="product-img">
-    <div class="product-text">
-        <p>Finding the right mouse is crucial for productivity and comfort. This Logitech mouse offers great precision and comfort for long work hours.</p>
+    <img src="mouse.jpg" alt="Mouse Icon" class="product-icon">
+    <div class="content-box">
+        <strong>Reliable Wireless Mouse</strong>
+        <p>A high-precision mouse reduces wrist fatigue and improves navigation speed during long work sessions.</p>
         <a href="YOUR_LINK_HERE" target="_blank">Shop Mice on Amazon</a>
     </div>
 </div>
 
-<h3>Ergonomic Laptop Stand</h3>
 <div class="product-row">
-    <img src="stand.jpg" alt="Ergonomic laptop stand" class="product-img">
-    <div class="product-text">
-        <p>A laptop stand helps improve your posture by elevating your screen to eye level, reducing neck strain significantly.</p>
+    <img src="stand.jpg" alt="Stand Icon" class="product-icon">
+    <div class="content-box">
+        <strong>Ergonomic Laptop Stand</strong>
+        <p>Elevating your screen prevents "tech neck" and improves posture by keeping your eyes level with the display.</p>
         <a href="YOUR_LINK_HERE" target="_blank">Shop Laptop Stands on Amazon</a>
     </div>
 </div>
