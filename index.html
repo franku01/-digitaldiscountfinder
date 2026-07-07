@@ -1,38 +1,46 @@
-<style>
-    .product-row {
-        display: flex;
-        align-items: flex-start; /* Aligns content to the top */
-        gap: 15px;              /* Spacing between icon and text */
-        margin-bottom: 30px;
-    }
-    .product-icon {
-        width: 40px;            /* Forces the icon to be small */
-        height: 40px;           /* Forces the icon to be small */
-        object-fit: cover;      /* Keeps the image from stretching */
-        flex-shrink: 0;         /* Ensures it doesn't get squished */
-    }
-    .content-box {
-        display: flex;
-        flex-direction: column;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Office Setup</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .product-section { margin-bottom: 40px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+        img { max-width: 300px; height: auto; display: block; margin-bottom: 10px; }
+        .mouse-thumb { max-width: 50px !important; height: 50px !important; }
+        a { color: blue; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
 
-<h2>My Office Setup Essentials</h2>
+    <h1>My Office Setup Essentials</h1>
 
-<div class="product-row">
-    <img src="mouse.jpg" alt="Mouse Icon" class="product-icon">
-    <div class="content-box">
-        <strong>Reliable Wireless Mouse</strong>
-        <p>A high-precision mouse reduces wrist fatigue and improves navigation speed during long work sessions.</p>
-        <a href="YOUR_LINK_HERE" target="_blank">Shop Mice on Amazon</a>
+    <!-- Mouse Section -->
+    <div class="product-section">
+        <h3>Reliable Wireless Mouse</h3>
+        <img src="/-digitaldiscountfinder/mouse.jpg" alt="Logitech wireless mouse" class="mouse-thumb">
+        <p>Finding the right mouse is crucial for productivity and comfort. This Logitech mouse offers great precision and comfort for long work hours.</p>
+        <a href="https://amzn.to/4wsWeBV" target="_blank">Shop Mouse on Amazon</a>
     </div>
-</div>
 
-<div class="product-row">
-    <img src="stand.jpg" alt="Stand Icon" class="product-icon">
-    <div class="content-box">
-        <strong>Ergonomic Laptop Stand</strong>
-        <p>Elevating your screen prevents "tech neck" and improves posture by keeping your eyes level with the display.</p>
-        <a href="YOUR_LINK_HERE" target="_blank">Shop Laptop Stands on Amazon</a>
+    <!-- Laptop Stand Section -->
+    <div class="product-section">
+        <h3>Ergonomic Laptop Stand</h3>
+        <img src="/-digitaldiscountfinder/stand.jpg" alt="Ergonomic laptop stand">
+        <p>A laptop stand helps improve your posture by elevating your screen to eye level, reducing neck strain significantly.</p>
+        <a href="https://amzn.to/4wzAGno" target="_blank">Shop Laptop Stand on Amazon</a>
     </div>
-</div>
+
+    <!-- Additional Recommended Products -->
+    <div class="product-section">
+        <h3>More Office Recommendations</h3>
+        <ul>
+            <li><a href="https://amzn.to/4b8KEnc" target="_blank">View Recommended Accessory 1</a></li>
+            <li><a href="https://amzn.to/4gjJ7OH" target="_blank">View Recommended Accessory 2</a></li>
+            <li><a href="https://amzn.to/4p6YSuJ" target="_blank">View Recommended Accessory 3</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
