@@ -8,9 +8,8 @@
         body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
         .product-section { margin-bottom: 40px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
         img { max-width: 300px; height: auto; display: block; margin-bottom: 10px; }
-        .mouse-thumb { max-width: 50px !important; height: 50px !important; }
-        /* Added class to make stand image small */
-        .stand-thumb { max-width: 50px !important; height: 50px !important; }
+        /* Applied consistent icon sizing to both classes */
+        .mouse-thumb, .stand-thumb { max-width: 50px !important; height: 50px !important; }
         a { color: blue; text-decoration: none; font-weight: bold; }
     </style>
 </head>
@@ -29,7 +28,6 @@
     <!-- Laptop Stand Section -->
     <div class="product-section">
         <h3>Ergonomic Laptop Stand</h3>
-        <!-- Added class to use the same small sizing -->
         <img src="stand.jpg" alt="Ergonomic laptop stand" class="stand-thumb">
         <p>A laptop stand helps improve your posture by elevating your screen to eye level, reducing neck strain significantly.</p>
         <a href="https://amzn.to/4wzAGno" target="_blank">Shop Laptop Stand on Amazon</a>
